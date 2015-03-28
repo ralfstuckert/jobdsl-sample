@@ -1,13 +1,13 @@
-package hmc.order;
+package hmc;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class StupidDummyIT {
+public class StupidDummyTest {
 
 	@Test
-	public void integrationTest() {
+	public void test() {
 		assertTrue("this won't fail", true);
 	}
 

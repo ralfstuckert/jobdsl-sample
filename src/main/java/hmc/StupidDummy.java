@@ -1,4 +1,4 @@
-package hmc.order;
+package hmc;
 
 public class StupidDummy {
 
