@@ -11,7 +11,7 @@ config.microservices.each { name, data ->
 }
 
 // create build pipeline view for every service
-microservices.each { name, data ->
+config.microservices.each { name, data ->
    buildPipelineView(name) {
      selectedJob("${name}-build")
    }

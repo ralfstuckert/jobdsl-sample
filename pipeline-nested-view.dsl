@@ -18,7 +18,7 @@ nestedView('Build Pipeline') {
       weather()
    }
    views {
-      microservices.each { name,data ->
+      config.microservices.each { name,data ->
          println "creating build pipeline subview for ${name}"
          view("${name}", type: BuildPipelineView) {
             selectedJob("${name}-build")
