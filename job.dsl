@@ -1,4 +1,4 @@
-def config = new ConfigSlurper().parse(new File('microservices.dsl').toURL())
+def config = new ConfigSlurper().parse(streamFileFromWorkspace('microservices.dsl'))
 
 // create job for every microservice
 config.microservices.each { name, data ->
