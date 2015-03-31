@@ -75,5 +75,5 @@ def createITestJob(name,data) {
 }
 
 def createDeployJob(name,data) {
-  freeStyleJob("${name}-deploy", 'SUCCESS', true) {}
+  freeStyleJob("${name}-deploy") {}
 }
