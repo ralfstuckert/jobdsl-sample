@@ -38,11 +38,7 @@ def createBuildJob(name,data) {
 
     publishers {
       archiveJunit('/target/surefire-reports/*.xml')
-
-      downstreamParameterized {
-        trigger("${name}-itest", 'SUCCESS', true) {
-        }
-      }
+      downstream("${name}-itest", 'SUCCESS')
     }
   }
 
@@ -51,10 +47,7 @@ def createBuildJob(name,data) {
 def createITestJob(name,data) {
   freeStyleJob("${name}-itest") {
     publishers {
-      downstreamParameterized {
-        trigger("${name}-deploy", 'SUCCESS', true) {
-        }
-      }
+      downstream("${name}-deploy", 'SUCCESS')
     }
   }
 }
