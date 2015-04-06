@@ -2,81 +2,81 @@ microservices {
   ad {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'ad'
-	group = 'base'
+    group = 'base'
   }
   billing {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'billing'
-	group = 'backend'
+    group = 'backend'
   }
   cart {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'cart'
-	group = 'frontend'
+    group = 'frontend'
   }
   config {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'config'
-	group = 'frontend'
+    group = 'frontend'
   }
   controlling {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'controlling'
-	group = 'backend'
+    group = 'backend'
   }
   customer {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'customer'
-	group = 'backend'
+    group = 'backend'
   }
   datastore {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'datastore'
-	group = 'backend'
+    group = 'backend'
   }
   help {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'help'
-	group = 'base'
+    group = 'base'
   }
   logon {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'logon'
-	group = 'base'
+    group = 'base'
   }
   order {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'order'
-	group = 'frontend'
+    group = 'frontend'
   }
   preview {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'preview'
-	group = 'frontend'
+    group = 'frontend'
   }
   security {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'security'
-	group = 'base'
+    group = 'base'
   }
   shipping {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'shipping'
-	group = 'backend'
+    group = 'backend'
   }
   shop {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'shop'
-	group = 'frontend'
+    group = 'frontend'
   }
   statistics {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'statistics'
-	group = 'base'
+    group = 'base'
   }
   warrenty {
     url = 'https://github.com/ralfstuckert/jobdsl-sample.git'
     branch = 'warrenty'
-	group = 'frontend'
+    group = 'frontend'
   }
 }
