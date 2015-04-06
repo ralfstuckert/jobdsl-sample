@@ -28,7 +28,7 @@ nestedView('Build Pipeline') {
                weather()
             }
             views {
-		    def innerNestedView = delegate
+		       def innerNestedView = delegate
                services.each { name,data ->
                   innerNestedView.view("${name}", type: BuildPipelineView) {
                      selectedJob("${name}-build")
