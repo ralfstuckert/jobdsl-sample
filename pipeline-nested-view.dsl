@@ -20,7 +20,7 @@ nestedView('Build Pipeline') {
    views {
       config.microservices.each { name,data ->
          println "creating build pipeline subview for ${name}"
-         view("${name}", type: BuildPipelineView) {
+         buildPipelineView("${name}") {
             selectedJob("${name}-build")
             triggerOnlyLatestJob(true)
     	    alwaysAllowManualTrigger(true)
@@ -34,6 +34,9 @@ nestedView('Build Pipeline') {
 }
 
 def createBuildJob(name,data) {
+
+println "${name}-build"
+println "${name}-itest"
   
   freeStyleJob("${name}-build") {
   

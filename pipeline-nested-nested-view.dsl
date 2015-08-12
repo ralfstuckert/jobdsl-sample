@@ -21,7 +21,7 @@ nestedView('Build Pipeline') {
    }
    views {
       microservicesByGroup.each { group, services ->
-         view("${group}", type: NestedView) {
+         nestedView("${group}") {
             description('Shows the service build pipelines')
             columns {
                status()
@@ -30,7 +30,7 @@ nestedView('Build Pipeline') {
             views {
                def innerNestedView = delegate
                services.each { name,data ->
-                  innerNestedView.view("${name}", type: BuildPipelineView) {
+                  innerNestedView.buildPipelineView("${name}") {
                      selectedJob("${name}-build")
                      triggerOnlyLatestJob(true)
     	             alwaysAllowManualTrigger(true)
