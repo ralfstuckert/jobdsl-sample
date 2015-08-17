@@ -35,9 +35,6 @@ nestedView('Build Pipeline') {
 
 def createBuildJob(name,data) {
 
-println "${name}-build"
-println "${name}-itest"
-  
   freeStyleJob("${name}-build") {
   
     scm {
