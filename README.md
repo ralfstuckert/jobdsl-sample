@@ -1,9 +1,11 @@
 # jobdsl-sample
 Repository for the sample projects used in [the article describing the Job DSL](http://hardmockcafe.blogspot.de/2015/03/job-dsl-part-i.html).
+The examples has been updated to work with JobDSL version 1.48.
+
 
 ## Prerequisites
 Before you start, you should install these Jenkins Plugins:
-- Job DSL
+- Job DSL (version >= 1.44)
 - Downstream-Ext
 - Build Pipeline Plugin
 - Nested View Plugin
